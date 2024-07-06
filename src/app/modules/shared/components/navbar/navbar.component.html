@@ -1,0 +1,37 @@
+<mat-toolbar>
+    <button id="menuSecciones" mat-icon-button class="example-icon" [matMenuTriggerFor]="secciones">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #secciones="matMenu">
+        <button mat-menu-item routerLink="/inicio">Inicio</button>
+        <button mat-menu-item [matMenuTriggerFor]="producto">Productos</button>
+    </mat-menu>
+
+    <span>Horneaditos</span>
+    <!-- Menu despegable -->
+    <button id="menuInicio" mat-menu-item routerLink="/inicio">Inicio</button>
+    <button id="menuProducto" mat-menu-item [matMenuTriggerFor]="producto">Productos</button>
+    <mat-menu #producto="matMenu">
+        <button mat-menu-item routerLink="/producto">General</button>
+        <button mat-menu-item routerLink="/facturas">Facturas</button>
+        <button mat-menu-item routerLink="/churros">Churros</button>
+        <button mat-menu-item routerLink="/tortas">Tortas</button>
+    </mat-menu>
+
+    <span class="example-spacer"></span>
+
+    <!-- Inicio de sesion y registro de nuevo usuario -->
+    <!-- Menu despegable -->
+
+    <button mat-menu-item routerLink="/inicio">Inicio</button>
+    <button mat-menu-item [matMenuTriggerFor]="usuario"><mat-icon>personn</mat-icon></button>
+    <mat-menu #usuario="matMenu">
+        <button mat-menu-item routerLink="/registro">¿Desea registrarse?</button>
+        <button mat-menu-item routerLink="/inicio-sesion">¡Inicie sesion!</button>
+    </mat-menu>
+    
+    <!--    Carrito -->
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>shopping_cart</mat-icon>
+    </button>
+</mat-toolbar>
