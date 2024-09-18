@@ -4,7 +4,7 @@
 
   @media (min-width: 300px) and (max-width: 700px) {
     mat-toolbar{
-      background-color: aquamarine;
+      background-color: rgb(228, 214, 170);
     }
 
     #menuinicio{
@@ -17,7 +17,7 @@
   
     @media (min-width: 700px) {
       mat-toolbar{
-       background-color:  aquamarine;
+       background-color:  rgb(190, 183, 138);
       }
 
       #menuSecciones{

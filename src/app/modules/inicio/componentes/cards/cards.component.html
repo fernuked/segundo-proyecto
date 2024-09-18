@@ -1,1 +1,20 @@
-<p>cards works!</p>
+<div class="container">
+    <div class="row">
+        <h1>Tarjetas e inicioooo</h1>
+        <div class="col">
+            <div *ngFor="let i of info" class="contenido">
+                <div class="d-flex justify-content-center align-items-center vh-100">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{{i.imagen}}" class="card-img-top" alt="{{i.alt}}">
+                        <div class="card-body">
+                            <h5 class="card-title">{{i.nombre}}</h5>
+                            <h4>{{i.precio}}</h4>
+                            <p class="card-text"> descripcion: {{i.descripcion}}</p>
+                            <a href="#" class="btn btn-danger">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
